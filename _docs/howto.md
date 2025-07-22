@@ -12,7 +12,7 @@ summary: Instructions to create a new SEFSC GitHub documentation site based on t
 
 ## Background
 
-The [SEFSC-documentation-jekyll-skeleton](https://github.com/MattGrossi-NOAA/SEFSC-documentation-jekyll-skeleton){:target="_blank" rel="noopener"} repository is a template, or "skeleton", starting point to create a new GitHub-based documentation site that uses the NOAA Fisheries Southeast Fisheries Science Center (SEFSC) [documentation-theme-jekyll](https://github.com/MattGrossi-NOAA/documentation-theme-jekyll){:target="_blank" rel="noopener"} documentation format and functionality. This documentation theme is derived from the NOAA Integrated Ocean Observing System (IOOS) [documentation-theme-jekyll](https://github.com/ioos/documentation-theme-jekyll){:target="_blank" rel="noopener"} and its upstream parent repositories, which is used for all [https://ioos.github.io](https://ioos.github.io){:target="_blank" rel="noopener"} sites.
+The [SEFSC-documentation-jekyll-skeleton](https://github.com/SEFSC/SEFSC-documentation-jekyll-skeleton){:target="_blank" rel="noopener"} repository is a template, or "skeleton", starting point to create a new GitHub-based documentation site that uses the NOAA Fisheries Southeast Fisheries Science Center (SEFSC) [documentation-theme-jekyll](https://github.com/SEFSC/documentation-theme-jekyll){:target="_blank" rel="noopener"} documentation format and functionality. This documentation theme is derived from the NOAA Integrated Ocean Observing System (IOOS) [documentation-theme-jekyll](https://github.com/ioos/documentation-theme-jekyll){:target="_blank" rel="noopener"} and its upstream parent repositories, which is used for all [https://ioos.github.io](https://ioos.github.io){:target="_blank" rel="noopener"} sites.
 
 The instructions below will allow you to create a new GitHub Pages site that follows the look and feel/functionality of the Jekyll documentation theme used by the [https://ioos.github.io](https://ioos.github.io){:target="_blank" rel="noopener"} site. You can then add/edit the template markdown documents with your own content.
 
@@ -26,7 +26,7 @@ Follow [Step 1a](#step-1a-use-the-sefsc-documentation-jekyll-skeleton-template-t
 
 This is done on the GitHub website.  These steps assume you already have a GitHub account in place.
 
-1. Browse to the [SEFSC-documentation-jekyll-skeleton](https://github.com/MattGrossi-NOAA/SEFSC-documentation-jekyll-skeleton){:target="_blank" rel="noopener"} repository, select the "Use this template" button, and select "Create a new repository": ![GitHub use template image](https://ioos.github.io/use-template.png){:style="display:block; border: 1px solid"}
+1. Browse to the [SEFSC-documentation-jekyll-skeleton](https://github.com/SEFSC/SEFSC-documentation-jekyll-skeleton){:target="_blank" rel="noopener"} repository, select the "Use this template" button, and select "Create a new repository": ![GitHub use template image](https://ioos.github.io/use-template.png){:style="display:block; border: 1px solid"}
 
 2. Select the repository owner (your own account or a GitHub organization you have write permissions to) and type a name for the repository. If the new repository is for SEFSC-related work, the repository name should adhere to the SEFSC repository naming convention as depicted in the [SEFSC GitHub SOP](https://github.com/SEFSC/SEFSC-Resources/blob/18a6c7e98b3e9b71f5e5912282d9d7f08c0e0a1a/SEFSC%20GitHub%20SOP%20and%20User%20Agreement%20Form/SEFSC%20Github%20SOP%20-%20RR%20-%20LON%20-%20BGM.pdf){:target="_blank" rel="noopener"}. Select other options as appropriate. At the end of this step, you should have a new repository available at the following URL: https://github.com/owner/my-new-documentation-repo. ![GitHub new repo image](https://ioos.github.io/new-repo.png){:style="width: 600px; display:block; border: 1px solid"}
 
@@ -57,10 +57,10 @@ An *orphan branch* in GitHub is a branch whose commit history is independent of 
    Then change the remote URL to the documentation repo:
 
    ```
-   git remote set-url origin https://github.com/MattGrossi-NOAA/SEFSC-documentation-jekyll-skeleton.git
+   git remote set-url origin https://github.com/SEFSC/SEFSC-documentation-jekyll-skeleton.git
    ```
 
-   {% include note.html content='To find this new URL, navigate to the [SEFSC-documentation-jekyll-skeleton](https://github.com/MattGrossi-NOAA/SEFSC-documentation-jekyll-skeleton/){:target="_blank" rel="noopener"} repo in a web browser and click on the green "< > Code" button.' %}
+   {% include note.html content='To find this new URL, navigate to the [SEFSC-documentation-jekyll-skeleton](https://github.com/SEFSC/SEFSC-documentation-jekyll-skeleton/){:target="_blank" rel="noopener"} repo in a web browser and click on the green "< > Code" button.' %}
 
 4. Make sure you're on your *local* **gh-pages** branch and then pull the contents of the **gh-pages** branch of *SEFSC-documentation-jekyll-skeleton* repo
 
@@ -97,7 +97,7 @@ An *orphan branch* in GitHub is a branch whose commit history is independent of 
 
 11. Under "Workflow permissions", select "Read and write permissions" to allow GitHub Actions to modify the repository, then click "Save".
 
-12. At the top of this page, you should see a banner saying "Your site is now live at..." with the URL of your documentation page. Launch the page to be sure. It should look exactly like the [SEFSC-documentation-jekyll-skeleton page](https://github.com/MattGrossi-NOAA/SEFSC-documentation-jekyll-skeleton/){:target="_blank" rel="noopener"} but with a URL pointing to your project.
+12. At the top of this page, you should see a banner saying "Your site is now live at..." with the URL of your documentation page. Launch the page to be sure. It should look exactly like the [SEFSC-documentation-jekyll-skeleton page](https://github.com/SEFSC/SEFSC-documentation-jekyll-skeleton/){:target="_blank" rel="noopener"} but with a URL pointing to your project.
 
 You should now have at least two local branches: the **gh-pages** branch you just created, and whatever branch(es) you had originally (*e.g.*, **main**, **master**, *etc.*). Verify using `git branch --all`. Likewise, your remote repository should now have a new **gh-pages** branch as well as the original branches, and it should contain a copy of the SEFSC documentation template files and subdirectories.
 
@@ -240,7 +240,7 @@ When finished editing a particular markdown page, set `editme: false` in the fro
 This theme uses two GitHub *submodules*. Submodules are essentially links to other GitHub repositories that allow certain components of the site to be synchronized more easily across all SEFSC GitHub Documentation sites. <!--[https://sefsc.github.io](https://sefsc.github.io). -->
 For example, the menu bar at the top of the page is configured with a single YAML file in a submodule, and the theme code itself, including site functionality and look and feel, is kept within a second submodule.
 
-The git submodules for this skeleton repository are sourced from the [MattGrossi-NOAA/documentation-theme-jekyll](https://github.com/MattGrossi-NOAA/documentation-theme-jekyll){:target="_blank" rel="noopener"} repository and located in the following submodule paths (as configured in the `.gitmodules` file in the repository root):
+The git submodules for this skeleton repository are sourced from the [SEFSC/documentation-theme-jekyll](https://github.com/SEFSC/documentation-theme-jekyll){:target="_blank" rel="noopener"} repository and located in the following submodule paths (as configured in the `.gitmodules` file in the repository root):
 
 |**Submodule Path**|**Branch Name**|**Description**|
 |--------|------------|------------|
@@ -302,7 +302,7 @@ nothing to commit, working directory clean
 ```
 Working with submodules can be tricky; however, the steps above should work in most cases.  For full documentation on the `git submodule` command, see: [https://git-scm.com/docs/git-submodule](https://git-scm.com/docs/git-submodule){:target="_blank" rel="noopener"}.  
 
-There should not be any need to modify code in either of the submodules manually; they are meant to be identical across all of the individual SEFSC GitHub Documentation sites.  They need only to be properly updated in local working copies before submitting any changes back to GitHub.  Both submodules are also automatically synchronized in GitHub with changes in the source [MattGrossi-NOAA/documentation-theme-jekyll](https://github.com/MattGrossi-NOAA/documentation-theme-jekyll){:target="_blank" rel="noopener"} repository via GitHub Actions as configured in the `.github/workflows/sync_theme.yml` file. For the MattGrossi-NOAA/SEFSC-documentation-jekyll-skeleton repository, that file can be found [here](https://github.com/MattGrossi-NOAA/SEFSC-documentation-jekyll-skeleton/blob/gh-pages/.github/workflows/sync_theme.yml){:target="_blank" rel="noopener"}.
+There should not be any need to modify code in either of the submodules manually; they are meant to be identical across all of the individual SEFSC GitHub Documentation sites.  They need only to be properly updated in local working copies before submitting any changes back to GitHub.  Both submodules are also automatically synchronized in GitHub with changes in the source [SEFSC/documentation-theme-jekyll](https://github.com/SEFSC/documentation-theme-jekyll){:target="_blank" rel="noopener"} repository via GitHub Actions as configured in the `.github/workflows/sync_theme.yml` file. For the SEFSC/SEFSC-documentation-jekyll-skeleton repository, that file can be found [here](https://github.com/SEFSC/SEFSC-documentation-jekyll-skeleton/blob/gh-pages/.github/workflows/sync_theme.yml){:target="_blank" rel="noopener"}.
 
 
 
