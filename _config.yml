@@ -143,19 +143,16 @@ description: "A Jekyll-based documentation theme for data management documentati
 # repository: modify to point to the GitHub repo shorthand name (replace 'your-documentation-repo-name')
 # github_editme_path: provide the basepath to the branch containing source files for this site (replace 'your-documentation-repo-name').  'blob/gh-pages/_docs' is standard and should remain as is
 
-#url                      : "https://sefsc.github.io"
-url                      : "https://mattgrossi-noaa.github.io"
+url                      : "https://sefsc.github.io"
 
 #baseurl                  : "/your-documentation-repo-name"
 baseurl                  : "/SEFSC-documentation-jekyll-skeleton"
 
-#repository               : "sefsc/your-documentation-repo-name"
-#repository               : "sefsc/SEFSC-documentation-jekyll-skeleton"
-repository               : "MattGrossi-NOAA/SEFSC-documentation-jekyll-skeleton"
+#repository               : "SEFSC/your-documentation-repo-name"
+repository               : "SEFSC/SEFSC-documentation-jekyll-skeleton"
 
-#github_editme_path       : "sefsc/your-documentation-repo-name/blob/gh-pages/_docs"
-#github_editme_path       : "sefsc/SEFSC-documentation-jekyll-skeleton/blob/gh-pages/_docs"
-github_editme_path       : "MattGrossi-NOAA/SEFSC-documentation-jekyll-skeleton/blob/gh-pages/_docs"
+#github_editme_path       : "SEFSC/your-documentation-repo-name/blob/gh-pages/_docs"
+github_editme_path       : "SEFSC/SEFSC-documentation-jekyll-skeleton/blob/gh-pages/_docs"
 
 
 # Setup/config for 'sefsc_documentation_theme_jekyll' git submodule (do not alter):
