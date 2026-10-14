@@ -1,6 +1,47 @@
 source "https://rubygems.org"
 
-gem 'github-pages', group: :jekyll_plugins
+gem 'github-pages-health-check', '= 1.17.9', group: :jekyll_plugins
+gem 'jekyll', '= 3.9.3', group: :jekyll_plugins
+gem 'jekyll-avatar', '= 0.7.0', group: :jekyll_plugins
+gem 'jekyll-coffeescript', '= 1.1.1', group: :jekyll_plugins
+gem 'jekyll-commonmark-ghpages', '= 0.4.0', group: :jekyll_plugins
+gem 'jekyll-default-layout', '= 0.1.4', group: :jekyll_plugins
+gem 'jekyll-feed', '= 0.15.1', group: :jekyll_plugins
+gem 'jekyll-gist', '= 1.5.0', group: :jekyll_plugins
+gem 'jekyll-github-metadata', '= 2.13.0', group: :jekyll_plugins
+gem 'jekyll-include-cache', '= 0.2.1', group: :jekyll_plugins
+gem 'jekyll-mentions', '= 1.6.0', group: :jekyll_plugins
+gem 'jekyll-optional-front-matter', '= 0.3.2', group: :jekyll_plugins
+gem 'jekyll-paginate', '= 1.1.0', group: :jekyll_plugins
+gem 'jekyll-readme-index', '= 0.3.0', group: :jekyll_plugins
+gem 'jekyll-redirect-from', '= 0.16.0', group: :jekyll_plugins
+gem 'jekyll-relative-links', '= 0.6.1', group: :jekyll_plugins
+gem 'jekyll-sass-converter', '= 1.5.2', group: :jekyll_plugins
+gem 'jekyll-seo-tag', '= 2.8.0', group: :jekyll_plugins
+gem 'jekyll-sitemap', '= 1.4.0', group: :jekyll_plugins
+gem 'jekyll-swiss', '= 1.0.0', group: :jekyll_plugins
+gem 'jekyll-theme-architect', '= 0.2.0', group: :jekyll_plugins
+gem 'jekyll-theme-cayman', '= 0.2.0', group: :jekyll_plugins
+gem 'jekyll-theme-dinky', '= 0.2.0', group: :jekyll_plugins
+gem 'jekyll-theme-hacker', '= 0.2.0', group: :jekyll_plugins
+gem 'jekyll-theme-leap-day', '= 0.2.0', group: :jekyll_plugins
+gem 'jekyll-theme-merlot', '= 0.2.0', group: :jekyll_plugins
+gem 'jekyll-theme-midnight', '= 0.2.0', group: :jekyll_plugins
+gem 'jekyll-theme-minimal', '= 0.2.0', group: :jekyll_plugins
+gem 'jekyll-theme-modernist', '= 0.2.0', group: :jekyll_plugins
+gem 'jekyll-theme-primer', '= 0.6.0', group: :jekyll_plugins
+gem 'jekyll-theme-slate', '= 0.2.0', group: :jekyll_plugins
+gem 'jekyll-theme-tactile', '= 0.2.0', group: :jekyll_plugins
+gem 'jekyll-theme-time-machine', '= 0.2.0', group: :jekyll_plugins
+gem 'jekyll-titles-from-headings', '= 0.5.3', group: :jekyll_plugins
+gem 'jemoji', '= 0.12.0', group: :jekyll_plugins
+gem 'kramdown', '= 2.3.2', group: :jekyll_plugins
+gem 'kramdown-parser-gfm', '= 1.1.0', group: :jekyll_plugins
+gem 'liquid', '= 4.0.4', group: :jekyll_plugins
+gem 'minima', '= 2.5.1', group: :jekyll_plugins
+gem 'nokogiri', '>= 1.13.6', '< 2.0', group: :jekyll_plugins
+gem 'rouge', '= 3.26.0', group: :jekyll_plugins
+gem 'terminal-table', '~> 1.4', group: :jekyll_plugins
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
 
